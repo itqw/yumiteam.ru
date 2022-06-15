@@ -4,6 +4,17 @@
 /*Regular 400*/
 /*Medium 500*/
 /*Bold 700*/
+@media screen and (max-width: 980px) {
+    body {
+        zoom: 100% !important;
+    }
+    #contact {
+        height: 75% !important;
+    }
+}
+body {
+    zoom: 125%;
+}
 * {
     font-family: "Montserrat", sans-serif;
     /*overflow-x: hidden;*/
@@ -84,7 +95,6 @@
 }
 #info {
     background: #ececec;
-    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -110,8 +120,10 @@
     margin-bottom: 10px;
 }
 #projects {
+    z-index: 4;
     background: #e3e3e3;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-around;
     color: #131313;
@@ -134,12 +146,12 @@
     transition: opacity 3s;
 }
 #info-logo {
-    z-index: 4;
     position: relative;
 }
 #info-logo img {
     /*filter: drop-shadow(0 0 20px rgba(206, 74, 230, 0.75));*/
     width: 250px;
+    z-index: 3 !important;
     position: relative;
 }
 #tbc {
@@ -183,6 +195,7 @@
     font-weight: 500;
     font-size: 18px;
     flex-wrap: wrap;
+    column-gap: 50px;
     row-gap: 25px;
 }
 #contact-vk img {
