@@ -5,15 +5,9 @@
 /*Medium 500*/
 /*Bold 700*/
 @media screen and (max-width: 980px) {
-    body {
-        zoom: 100% !important;
-    }
     #contact {
         height: 75% !important;
     }
-}
-body {
-    zoom: 150%;
 }
 * {
     font-family: "Montserrat", sans-serif;
@@ -203,6 +197,38 @@ body {
 }
 #contact-mail img {
     width: 90px;
+}
+@media screen and (min-width: 981px){
+    #what-is-yumi {
+        font-size: 80px;
+    }
+    #yumi-description {
+        font-size: 24px;
+    }
+    #projects-title {
+        font-size: 58px;
+    }
+    #projects-text {
+        font-size: 24px;
+    }
+    #info-logo img {
+        width: 300px;
+    }
+    #tbc img {
+        width: 750px;
+    }
+    #contact-title {
+        font-size: 38px;
+    }
+    #contacts {
+        font-size: 24px;
+    }
+    #contact-vk img {
+        width: 114px;
+    }
+    #contact-mail img {
+        width: 114px;
+    }
 }
 a,
 a:active,
